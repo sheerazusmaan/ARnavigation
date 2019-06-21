@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+    >
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context=".MapsActivity2" />
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="18dp"
+    android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+    >
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:layout_width="280dp"
+        android:id="@+id/autocomp"
+        android:layout_height="match_parent"
+        android:hint="Destination"/>
+
+    <View
+        android:id="@+id/VerticalLine"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorForeground" />
+
+
+    <ImageButton
+        android:id="@+id/srchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@android:drawable/ic_search_category_default" />
+</android.support.v7.widget.LinearLayoutCompat>
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+
+    android:layout_marginTop="600dp"
+    android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+    android:id="@+id/banner"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/maptv2"
+        android:text="Let's go "
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@drawable/common_google_signin_btn_text_light"/>
+
+
+
+    <View
+        android:id="@+id/VerticalLine2"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorForeground" />
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
